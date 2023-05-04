@@ -12,3 +12,10 @@ BankAccount.prototype.withdrawFunds(withdrawAmount);
 let bankAccount = new BankAccount(Jason, 1000);
 bankAccount.withdrawFunds(500);
 Expected Output: {name: Jason, balance: 500}
+
+Test: "BankAccount.prototype.depositFunds should add depositAmount to balance."
+Code:
+BankAccount.prototype.depositFunds(depositAmount);
+let bankAccount = new BankAccount(Jason, 1000);
+bankAccount.depositFunds(500);
+ExpectedOutput: {name: Jason, balance: 1500}
