@@ -1,3 +1,7 @@
+-----------------------------
+
+<!-- Tests -->
+
 Describe: BankAccount
 
 Test: "It should construct an object with name and initial deposit amount."
