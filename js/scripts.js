@@ -63,9 +63,6 @@ function depositFunds(event) {
 function withdrawFunds(event) {
   event.preventDefault();
   const accountWithdraw = parseInt(document.querySelector("input#withdraw-funds").value);
-  if (accountWithdraw > 0) {
-    window.alert("Insufficient Funds");
-  }
   accountBook.account.withdrawAccountFunds(accountWithdraw);
   document.querySelector("p#balance").innerText = accountBook.account.balance;
 }
