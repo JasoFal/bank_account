@@ -6,6 +6,7 @@ function AccountBook() {
 }
 
 AccountBook.prototype.addAccount = function(account) {
+  // Functionality for multiple accounts
   // account.id = this.assignId();
   if (this.account === null) {
     this.account = account;
@@ -32,10 +33,6 @@ function BankAccount(name, initialDeposit) {
   this.balance = initialDeposit;
 }
 
-// BankAccount.prototype.youBetterBecomeANumber = function() {
-//   return this.balance = this.balance;
-// }
-
 BankAccount.prototype.withdrawAccountFunds = function(withdrawAmount) {
   return this.balance = this.balance - withdrawAmount;
 };
@@ -53,8 +50,6 @@ function handleFormSubmission(event) {
   console.log(inputInitialDeposit);
   const newBankAccount = new BankAccount(registerAccountName, inputInitialDeposit);
   accountBook.addAccount(newBankAccount);
-  console.log(accountBook);
-  console.log(accountBook.account);
   document.querySelector("p#balance").innerText = newBankAccount.balance;
 }
 
